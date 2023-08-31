@@ -1,0 +1,462 @@
+/* -------------------------Home.html ---------------------------*/
+ body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar {   
+            background-color:  #5F8575;
+            overflow: hidden;
+        }
+
+        .navlist {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: left;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+          }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 20px 16px;
+            text-decoration: none;
+        }
+      /* nav bar animation */
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+            transform: scale(1.1);
+            transition: transform 0.3s;
+        }       
+
+        .content-box {
+            position: relative;    
+            margin-top: 50px;
+            z-index: 500;
+            left: 390px;
+            top: 240px; 
+            color: white;
+        }
+
+     
+        .GetStartedbutton-box { 
+            
+            border: 2px solid #333;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 120px;
+            left: 450px;
+            position: relative;
+            z-index: 800;
+            top:270px;
+        
+        }
+
+        .getstarted-button {
+            background-color: #5F8575;
+            border: none;
+            padding: 10px 20px;
+            margin-left: 5px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: center;
+            align-items: center;
+
+           
+        }
+       /* get started animation */
+        .getstarted-button:hover {
+            background-color: #232323;;
+            color: black;
+            transform: scale(1.2);
+            transition: transform 0.3s;
+
+        } 
+
+        .getstarted-button a {     
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+    
+        }
+
+
+        #HomePageBox{
+            position: fixed;
+            background-color:#5F8575;
+            width: 950px;
+            height: 600px;
+            left: 250px;
+            top: 210px;
+        }
+
+        #imageBox{
+
+            position: fixed;
+            z-index: 400;
+            left: 790px;
+            top:330px
+        }
+
+        #homebody{
+            background-color: #232323;
+        }
+        
+        .healthisWealth  {
+            font-size: 35px;
+        }
+
+      
+
+/*-----------------------Find whatToEat.html----------------*/
+
+.loading-box {
+    position: fixed;
+    z-index: 500;
+    left: 900px;
+    bottom: 290px;
+    font-size: x-large;
+    color:orangered;
+}
+#dna {
+   background-color:black;
+   
+}
+
+
+#testdna{
+   position: fixed;
+   left: 500px; 
+   bottom: 100px;
+   left:700px;
+   width: 900px;
+   top: 100px;
+}
+
+#bloodForm {
+    position: relative;
+    background-color: white;
+    padding: 40px 60px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    top:50px;
+    left: 100px;
+    
+}
+
+.formLabels {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: green;
+}
+
+.formtype {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+
+
+.radio  {
+    margin-right: 2px;
+}
+
+#Submit{
+    background: linear-gradient(to right, #45a049, #33AEFF);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
+}
+
+#Submit:hover {
+    box-shadow: 0 2px 5px #33AEFF(0, 0, 0, 0.1);
+}
+
+.response-area {
+    position: relative; 
+    padding: 20px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    margin-left: 20px; 
+    z-index: 600;
+    left: 750px;
+    bottom:550px;
+    background-color: #f2f2f2;
+}
+
+.clear-button {
+    position: relative;;
+    background-color: #5F8575;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    left: 750px;
+    bottom:535px;
+    z-index: 600;
+    font-weight: bold;
+      
+}
+
+
+.contentBloodbox {
+    display: flex;
+    justify-content: start; 
+    align-items: flex-start; 
+    padding: 0 20px; 
+}
+
+.response-box {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+/*---------------------blog.html-------------------------------*/
+
+
+
+
+#blogbody {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+
+.blogcontainer {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px 20px;
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+   
+   justify-content: space-around;
+   
+
+   
+}
+
+article {
+    background: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    
+}
+
+article img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    .blogcontainer {
+        padding: 0 10px;
+    }
+}
+
+#article1 {
+    margin: 12px;
+}
+
+#article2 {
+    margin: 12px;
+}
+
+#article3 {
+    margin: 12px;
+}
+
+.blogdate {
+  
+    border: none;
+    padding: 5px 30px;
+    margin-left: 5px;
+    cursor: pointer;
+    color: gray;
+    font-size: 22px;
+    text-align: center;
+    
+}
+
+
+#featured {
+    text-align: center;
+}
+
+.buttonsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;  
+    margin: 20px 0;  
+}
+
+.submitArticle-box {
+    border: 2px solid #333;
+    padding: 5px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.submitArticlebtn {
+    background-color: transparent;
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.viewAllarticlesBox {
+    border: 2px solid #333;
+    padding: 5px 30px;
+    display: flex;
+    align-items: center;
+}
+
+#viewAllBtn {
+    background-color: transparent;
+    border: none;
+    padding: 5px 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+#blogformdiv {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 500; 
+    justify-content: center;
+    align-items: center;
+}
+
+#blogform {
+    background-color: #ffffff;
+    padding: 58px;
+    border-radius: 10px;
+    width: 450px;
+    height: 490px;
+    margin-right: 50px;
+    position: relative;
+    left: 500px;
+    top:300px;
+    
+}
+
+.blogContainerbottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.bottom-article {
+    flex: 1 1 calc(33.33% - 24px); 
+    margin: 12px; 
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    max-width: calc(33.33% - 24px);
+}
+
+.blogContainerbottom article img {
+    max-width: 100%;
+    height: auto;
+}
+
+#blogContainerMiddle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.bloglabel {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: green;
+}
+
+#articleSubmit {
+    background: linear-gradient(to right, #45a049, #33AEFF);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
+}
+
+#blogdescription {
+    width: 100%;
+    padding: 5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    border: 1px solid green;
+    border-radius: 5px;
+    box-shadow: rgba(1, 1, 1, 0.1);
+    resize: vertical;
+}
+
+#blogdescription:focus {
+    border-color: #33AEFF;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.titleform {
+    font-weight: bolder;
+    font-size: large;
+    display:block;
+    text-align: center;
+}

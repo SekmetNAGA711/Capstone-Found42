@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <link rel="stylesheet" href="style.css">
+ <title>Blog</title>
+</head>
+<body id="blogbody">
+
+
+<!-- Navigation bar ----------------->
+<nav class="navbar">
+<ul class="navlist">
+    <li><a href="./home.html">Home</a></li>
+    <li><a href="./whatToEat.html">Find What to Eat</a></li>
+    <li><a href="./blog.html">Blog</a></li>
+</ul>   
+</nav>
+
+
+<!-- Article--------------------->
+
+    <p class="blogdate">September 2023</p>
+
+<h1 id="featured">This Month's Featured Articles</h1>
+
+
+<div class="blogcontainer">
+
+<article id="article1">
+        <h2>Holy Basil(Tulsi) Herb Tea for Headaches </h2>
+        <img src="https://i.postimg.cc/7L4Z3tJB/tea.jpg" alt="Sample Image">
+        <p>
+            Holy basil contains a range of natural antioxidants that can help protect the body tissues against ailments. 
+
+               <br>
+            <a href="https://jarvedworld.in/blogs/news/benefits-of-tulsi-leaves">Click to Read More</a> <br>
+            <a href="https://www.jiva.com/blog/3-tulsi-home-remedies-for-severe-headaches#:~:text=Its%20oil%20relaxes%20your%20muscles,help%20relieve%20vertigo%20and%20lightheadedness.">Further Reading</a>
+        </p>
+    </article>
+
+    <article id="article2">
+        <h2>6 Plants Caffeine: Nature Energy Enhancer</h2>
+        <img src="https://i.postimg.cc/CLZ5SqV4/alternative.jpg" alt="Sample Image">
+        <p>
+            Caffeine is a natural compound found in nature that is both bitter and stimulating to the nervous and cardiovascular systems.  
+
+<br>
+            <a href="https://www.boulderteahouse.com/whats-brewing-tea-blog/2022/8/8/6-plants-that-contain-caffeine-the-nature-energy-enhancer">Click to Read More</a> <br>
+        </p>
+    </article>
+
+    <article id="article3">
+        <h2>The Top 10 Benefits of Regular Exercise</h2>
+        <img src="https://i.postimg.cc/dVNmxdwc/Excercise.jpg" alt="Sample Image">
+        <p>
+            Regular exercise has been shown to help boost energy levels and enhance your mood. It may also be associated with many other benefits. <br>
+            <a href="https://www.healthline.com/nutrition/10-benefits-of-exercise">Click to Read More</a> 
+        </p>
+    </article>
+</div>
+
+<div class="buttonsContainer">
+    <div class="viewAllarticlesBox">
+        <button id="viewAllBtn">View All Blogs</button>
+    </div>
+
+    <div class="submitArticle-box">
+        <button class="submitArticlebtn" onclick="showblogForm()">Submit an article</button>
+  </div>
+</div>
+<!------------------------------form---------------------------->
+<div id="blogformdiv" style="display: none;">
+   <form  id="blogform" name="form" >
+    <label for="titleform" class="titleform">Fill In your Article's Details Below</label>
+    <br>
+    <label for="imageurl" class="bloglabel">Image URL</label>
+	<input type="url" class="blogform" id="blogImg">
+	<br>
+    <br>					
+    <label for="title" class="bloglabel">Title</label>
+	<input type="text" class="blogform" id="blogtitle">
+    <br>
+    <br>
+   <label for="blogdescription" class="bloglabel">Description</label>
+	<textarea rows="10" column="10" class="blogform" id="blogdescription"></textarea>
+    
+    <input id="articleSubmit" type="submit" value="Submit">
+    </form>
+</div>
+
+<div class=blogContainerMiddle id="blogContainerMiddle">
+
+</div>
+<div class="blogContainerbottom" id="blogContainerbottom">
+
+</div>
+
+<script src="../node_modules/axios/dist/axios.min.js"></script>
+ <script src="./blog.js"></script>
+</body >
+</html>

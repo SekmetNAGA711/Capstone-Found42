@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <link rel="stylesheet" href="style.css">
+ <title>Find WhatToEat</title>
+</head>
+
+<body id="dna">
+
+<!-- Navigation bar ------------------------------------->
+<nav class="navbar">
+    <ul class="navlist">
+        <li><a href="./home.html">Home</a></li>
+        <li><a href="./whatToEat.html">Find What to Eat</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+    </ul>   
+    </nav>
+
+<!--Form ----------------------------------------------->
+<div class ="contentBloodbox">
+<form id ="bloodForm">
+    <!-- Name Input -->
+    <label class="formLabels" for="name">Name:</label>
+    <input class="formtype" type="text" id="name" name="name" required>
+    <br><br>
+
+    <!-- Age Input ------->
+    <label class="formLabels" for="age">Age:</label>
+    <input class="formtype" type="number" id="age" name="age" min="1" required>
+    <br><br>
+
+    <!-- Gender Selection ----------->
+    <label class="formLabels">Gender:</label>
+    <input class="radio" type="radio" id="male" name="gender" value="male" required>
+    <label class="formLabels" for="male">Male</label>
+    
+    <input class="radio" type="radio" id="female" name="gender" value="female" required>
+    <label class="formLabels" for="female">Female</label>
+    <br><br>
+
+    <!-- Blood Type Selection -------------------->
+    <label class="formLabels" for="bloodType">Blood Type:</label>
+    <select class="formtype" id="bloodType" name="bloodType" required>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+    </select>
+    <br><br>
+
+    <!-- Submit Button -->
+    <input id="Submit" type="submit" value="Submit">
+    
+</form>  
+
+</div>
+
+<div class="response-box" style="display: none;">
+    <section class="response-area"></section>
+    <button id="clearResults" class="clear-button">Clear Results</button>
+</div>
+
+<div id="testdna">
+    <img id="science" height="450" width="670" src="./DNAFinal.gif"/>
+</div>
+
+<div class="loading-box" style="display: none;">
+    <p>Calculating...</p>
+</div>
+
+ <!---------- End of Form -------------------->
+ <script src="../node_modules/axios/dist/axios.min.js"></script>
+ <script src="./Eat.js"></script>
+</body>
+</html>
+
+
+</body>
+</html>
