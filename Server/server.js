@@ -5,7 +5,15 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+const path = require('path');
 
+app.use(express.static(path.join(__dirname, '..', 'Html ,CSS & mainjs')));
+
+// app.use(express.static(`${__dirname}/Html ,CSS & mainjs`))
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '..', 'Html ,CSS & mainjs', 'home.html'));
+});
 /*----------------------------Blog Page----------------------------------------*/
 
 
