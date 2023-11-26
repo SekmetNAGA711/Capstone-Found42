@@ -106,16 +106,16 @@ const bloodInfo = {
     "AB+": {
         description: "You have the most varied diet option when \
         compared to other blood types. This is because your blood type AB+ has a tolerant digestive \
-        system. Research shows a dietary combination of those for \
+        system. Research shows a dietary combination  of those for \
         blood types A and B. <br> <br> Foods include:",
         foods: ["Certain meats: Tofu, lamb, mutton, rabbit, turkey, and fish. <br>Avoid Beef, chicken and pork ",
         "Rice",
          "Broccoli",
          "cauliflower",
          "yams",
-         "Sweet Potatoe",
+         "Sweet Potatoe ",
          "Fruits: Almost all fruits are beneficial for you, however grapes, <brb>plums and berries are especially beneficial <br> \
-         avoid oranges and bananas",
+         avoid oranges and b",
          "Teas",
         ]
     },
@@ -136,18 +136,18 @@ const bloodInfo = {
     },
     "O+": {
         description: "A high-protein diet and certain fruits and vegetables, \
-        but limited in grains and legumes. Corn, dairy, kidney beans, caffeine and alcohol are to be avoided. Your diet resembles the paleo diet. Take various supplements to help with tummy troubles and other issues\
+        but limited in graines and legumes. Corn, dairy, kidney beans, caffeine and alcohol are to be avoided. Your diet resembles the paleo diet. Take various supplements to help with tummy troubles and other issues\
         your O+ blood type tends to have.<br> <br> Good foods include:",
         foods: ["Protein: lamb, mutton, vension, fish and Poutry",
         "Seafood: O+ blood type reacts well to seafood, seafoods like cod, mackerel and sardines are good choices and kelp, which is rich in iodine",
-     "kale",
+     "kale", 
     "Spinach",
     "Fruits: Most fruits in moderation, However plums, figs and prunes are particularly beneficial",
     "walnuts",
     "almonds",
     "flaxseed",
     "olive oil",
-    "spices: cayenne, curry, parsley and seaweed",
+    "spices: cayenne, curry, parsley and seeweed",
     "Teas"]
     },
     "O-": {
@@ -158,7 +158,7 @@ const bloodInfo = {
         "Seafood: O- blood type reacts well to seafood, seafoods like cod, mackerel and sardines are good choices and kelp, which is rich in iodine",
          "kale",
         "Spinach",
-        "Fruits: Most fruits in moderation, However plums, figs and prunes are particularly beneficial",
+        "Fruits: Most Fruits in moderation, However plums, figs and prunes are particularly beneficial",
         "walnuts",
         "almonds",
         "flaxseed",
