@@ -11,7 +11,7 @@ const path = require('path');
 
 app.use(express.static(path.join(__dirname, '..', 'Html ,CSS & mainjs')));
 
-// app.use(express.static(`${__dirname}/Html ,CSS & mainjs`))
+app.use(express.static(`${__dirname}/Html ,CSS & mainjs`))
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '..', 'Html ,CSS & mainjs', 'home.html'));
@@ -20,9 +20,9 @@ app.get('/', (req, res) => {
 
 
 
-const db = require('./database')
-const seed = require('./seed')
-const {addBlog, getBlogs,deleteBlog} = require('./controllers/addblog')
+const db = require('./Server/database')
+const seed = require('./Server/seed')
+const {addBlog, getBlogs,deleteBlog} = require('./Server/controllers/addblog')
 
 db.sync()
 app.post('/api/seed', seed)
