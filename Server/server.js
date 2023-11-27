@@ -176,4 +176,5 @@ app.post('/api/bloodInfo', (req, res) => {
 
 
 
-app.listen(4004, () => console.log('Server running on Port 4004'));
+const PORT = process.env.PORT || 4004;
+app.listen(PORT, () => console.log(`Server running on Port ${PORT}`));
