@@ -14,21 +14,21 @@ module.exports = db
 // const CONNECTION_STRING = process.env.DATABASE_URL || 'postgresql://postgres:admin@localhost:5432/Health-is-Wealth';
 
 // const db = new Sequelize(CONNECTION_STRING, {
-//   dialect: 'postgres', // This explicitly sets the dialect for Sequelize
+//   dialect: 'postgres', 
 //   dialectOptions: {
 //     ssl: {
 //       require: true,
-//       rejectUnauthorized: false // Necessary for Heroku to allow connection
+//       rejectUnauthorized: false 
 //     }
 //   },
-//   logging: false // Optional: Disable SQL query logging
+//   logging: false 
 // });
 
 // module.exports = db;
 
 // const { Sequelize } = require('sequelize');
 
-// // Use Heroku's DATABASE_URL directly
+
 // const CONNECTION_STRING = process.env.DATABASE_URL;
 
 // const db = new Sequelize(CONNECTION_STRING, {
@@ -36,10 +36,10 @@ module.exports = db
 //   dialectOptions: {
 //     ssl: {
 //       require: true,
-//       rejectUnauthorized: false // Necessary for Heroku to allow connection
+//       rejectUnauthorized: false 
 //     }
 //   },
-//   logging: false // Optional: Disable SQL query logging
+//   logging: false 
 // });
 
 // module.exports = db;
