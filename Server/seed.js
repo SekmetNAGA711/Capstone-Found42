@@ -1,7 +1,7 @@
 
 const db = require('./database');
 
-const seed = async () => {
+const seed = async (req, res) => {
   try {
     // This will drop the tables if they exist and recreate them
     await db.sync({ force: true });
