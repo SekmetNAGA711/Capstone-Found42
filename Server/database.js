@@ -1,3 +1,12 @@
+require('dotenv').config()
+const CONNECTION_STRING = process.env.CONNECTION_STRING
+const {Sequelize} = require('sequelize')
+
+const db = new Sequelize(CONNECTION_STRING)
+
+module.exports = db
+
+
 // require('dotenv').config();
 // const { Sequelize } = require('sequelize');
 
@@ -17,20 +26,20 @@
 
 // module.exports = db;
 
-const { Sequelize } = require('sequelize');
+// const { Sequelize } = require('sequelize');
 
-// Use Heroku's DATABASE_URL directly
-const CONNECTION_STRING = process.env.DATABASE_URL;
+// // Use Heroku's DATABASE_URL directly
+// const CONNECTION_STRING = process.env.DATABASE_URL;
 
-const db = new Sequelize(CONNECTION_STRING, {
-  dialect: 'postgres',
-  dialectOptions: {
-    ssl: {
-      require: true,
-      rejectUnauthorized: false // Necessary for Heroku to allow connection
-    }
-  },
-  logging: false // Optional: Disable SQL query logging
-});
+// const db = new Sequelize(CONNECTION_STRING, {
+//   dialect: 'postgres',
+//   dialectOptions: {
+//     ssl: {
+//       require: true,
+//       rejectUnauthorized: false // Necessary for Heroku to allow connection
+//     }
+//   },
+//   logging: false // Optional: Disable SQL query logging
+// });
 
-module.exports = db;
+// module.exports = db;
